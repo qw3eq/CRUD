@@ -1,0 +1,39 @@
+<!-- Add public/main.js -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script scr="main.js"></script>
+    <title>CRUD</title>
+  </head>
+  <body>
+    <h1>Title page</h1>
+
+    <ul class="names">
+      <% for(var i=0; i<names.length; i++) {%>
+        <li class="name">
+          <span><%= names[i].FirstName %></span>
+          <span><%= names[i].LastName %></span>
+        </li>
+      <% } %>
+    </ul>
+
+    <form action="/names" method="post">
+      <input type="text" name="FirstName">
+      <input type="text" name="LastName">
+      <button type="submit">Submit</button>
+
+      <div class="">
+          <h2>Replace last line with name Nikolay to SUKPIDR</h2>
+          <button type="button" id="update">SUKPIDR!!!</button>
+      </div>
+
+      <div class="">
+        <h2>Delete last line</h2>
+        <button type="button" id="delete">Delete</button>
+      </div>
+
+    </form>
+  </body>
+</html>
