@@ -14,7 +14,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "gulp-nunjucks-render": "^2.2.2",
-    "mongodb": "^3.1.10",
+    "mongodb": "^3.1.13",
     "whatwg-fetch": "^3.0.0"
   }
 }
